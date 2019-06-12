@@ -6,15 +6,16 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 5.times do
-d = Department.create(
-    name: Faker::Commerce.department,
+ Department.create(
+   id: 3,
+    name: "out of sight store"
 
   )
   5.times do
     Item.create(
-    name: Faker::Commerce.product_name,
-    price: Faker::Commerce.price,
-    department_id: d.id
+    name: "hat",
+    price: "299",
+    department_id: 3
   )
  end
 end
